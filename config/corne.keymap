@@ -35,7 +35,7 @@
     raise_layer {
       bindings = <
         &kp F1 &kp F2    &kp F3    &kp F4   &kp F5    &kp F6     &kp F7    &kp F8   &kp F9   &kp F10   &kp F11 &kp F12
-        &trans &kp PRCNT &kp CARET &kp AMPS &kp ASTRK &kp HOME   &kp PG_UP &kp LEFT &kp UP   &kp RIGHT &trans  &kp K_APP
+        &trans &kp PRCNT &kp CARET &kp AMPS &kp ASTRK &kp HOME   &kp PG_UP &kp LEFT &kp UP   &kp RIGHT &trans  &trans
         &trans &kp EXCL  &kp AT    &kp HASH &kp DLLR  &kp END    &kp PG_DN &trans   &kp DOWN &trans    &trans  &kp CAPS
         &mo 1 &kp LCMD &mt LALT SPACE   &kp SPACE &mt RCMD ENTER &trans
       >;
@@ -43,9 +43,9 @@
 
     media_layer {
       bindings = <
-        &bt BT_CLR &bt BT_NXT &bt BT_PRV &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp K_MUTE &trans &trans  &trans &trans &trans
-        &trans &trans &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &kp C_VOL_UP &kp C_PREV &kp C_PP &kp C_NEXT &kp C_BRI_UP &trans
-        &trans &trans &bl BL_TOG &rgb_ug RGB_EFR &rgb_ug RGB_HUD &rgb_ug RGB_SAD &kp C_VOL_DN &trans &trans &trans &kp C_BRI_DN &trans
+        &bt BT_CLR &bt BT_PRV &bt BT_NXT      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &kp K_MUTE   &trans     &trans   &trans     &trans       &trans
+        &trans     &trans     &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &kp C_VOL_UP &kp C_PREV &kp C_PP &kp C_NEXT &kp C_BRI_UP &trans
+        &trans     &trans     &bl BL_TOG      &rgb_ug RGB_EFR &rgb_ug RGB_HUD &rgb_ug RGB_SAD &kp C_VOL_DN &trans     &trans   &trans     &kp C_BRI_DN &trans
         &trans &kp LCMD &mt LALT SPACE   &kp SPACE &mt RCMD ENTER &trans
       >;
     };
