@@ -22,10 +22,10 @@
 //                     | LWR | GUI | SPC |   | SPC | ENT  | RSE |
                         display-name = "Base";
                         bindings = <
-   &kp TAB   &kp SEMI &kp COMMA &kp DOT &kp P &kp Y   &kp F &kp G  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHFT &kp A &kp O &kp E &kp U &kp I   &kp D &kp H  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCTRL &kp ' &kp Q &kp J &kp K &kp X   &kp B &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+   &kp TAB   &kp SEMI &kp COMMA &kp DOT &kp P &kp Y   &kp F &kp G  &kp C  &kp R  &kp L  &kp BSPC
+   &kp LSHFT &kp A    &kp O     &kp E   &kp U &kp I   &kp D &kp H  &kp T  &kp N  &kp S  &kp RALT
+   &kp LCTRL &kp SQT  &kp Q     &kp J   &kp K &kp X   &kp B &kp M  &kp W  &kp V  &kp Z  &kp FSLH
+                      &mo 1 &kp LGUI &mt LALT SPACE   &kp SPACE &mt RGUI RET &mo 2
                         >;
                 };
 
@@ -37,40 +37,40 @@
 //                   |     |  GUI  | SPC |   | SPC | ENT | MED |
                         display-name = "Lower";
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &kp ESC   &kp COLON &kp LT    &kp GT    &kp LPAR &kp RPAR   &kp BSLH  &kp N7 &kp N8 &kp N9 &kp N0 &kp DEL
+   &kp LSHFT &kp GRAVE &kp MINUS &kp EQUAL &kp LBKT &kp RBKT   &kp PIPE  &kp N4 &kp N5 &kp N6 &trans &kp RALT
+   &kp LCTRL &kp DQT   &kp UNDER &kp PLUS  &kp LBRC &kp TBRC   &kp TILDE &kp N1 &kp N2 &kp N3 &trans &trans
+                                        &trans &trans &trans   &kp SPACE &mt RGUI RET &mo 3
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  F1   | F2  | F3  | F4  | F5  | F6  |   | F7  | F8  | F9  | F10 | F11 | F12 |
-// | LSHFT |     |     |     |     |     |   |     | LFT | UP  | RGT |    | RALT |
-// | LCTRL |     |     |     |     |     |   |     |     | DWN |     |    | CAPS |
+// | F1  | F2  | F3  | F4  | F5  | F6  |   | F7    | F8  | F9  | F10 | F11 | F12 |
+// |     |  %  |  ^  |  &  |  *  |     |   | PG_UP | LFT | UP  | RGT |     |     |
+// |     |  !  |  @  |  #  |  $  |     |   | PG_DN |     | DWN |     |     |     |
 //                     | MED | GUI | SPC |   | SPC | ENT |     |
                         display-name = "Raise";
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp F1 &kp F2   &kp F3    &kp F4   &kp F5   &kp F6      &kp F7    &kp F8   &kp F9   &kp F10   &kp F11 &kp F12
+   &trans &kp DLLR &kp CARET &kp AMPS &kp STAR &trans      &kp PG_UP &kp LEFT &kp UP   &kp RIGHT &trans  &trans
+   &trans &kp EXCL &kp AT    &kp HASH &trans   &kp PRCNT   &kp PG_DN &trans   &kp DOWN &trans    &trans  &trans
+                           &mo 3 &kp LGUI &mt LALT SPACE   &trans &trans &trans
                         >;
                 };
-                
+
                 media_layer {
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |      |      |   | BRIU | MUTE | VOLD | VOLU |     | SLEP |
-// |     |     |     | CUT | COPY | PSTE |   | BRID | MRWD | MPLY | MFFD |     |      |
-// |     |     |     |     |      |      |   |      |      |      |      |     |      |
-//                     |     |     |     |   |     |     |     |
-                        display-name = "Media";
+// |     |     |     |     |     |      |   | BUP | MUTE | VOLD | VOLU |     | PWR |
+// |     |     |     |     |     | PRNT |   | BDN | PREV | PLAY | NEXT |     |     |
+// |     |     |     |     |     |      |   |     |      |      |      |     |     |
+//                     | MED | GUI | SPC |   | SPC | ENT |     |
+                        display-name = "Raise";
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &bt BT_CLR &trans &trans &bt BT_SEL 1 &bt BT_PRV &bt BT_NXT        &kp C_BRI_UP &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans &kp C_PWR
+   &trans     &trans &trans &bt BT_SEL 2 &trans     &kp LGUI(LS(5))   &kp C_BRI_DN &kp C_PREV &kp C_PP &kp C_NEXT &trans  &trans
+   &trans     &trans &trans &bt BT_SEL 3 &trans     &trans            &trans &trans   &trans &trans    &trans  &trans
+                    	         &trans &trans &trans   &trans &trans &trans
                         >;
                 };
 
