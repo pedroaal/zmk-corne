@@ -37,7 +37,7 @@
                         bindings = <
    &kp ESC   &kp COLON &kp LT    &kp GT    &kp LPAR &kp RPAR   &kp BSLH  &kp N7 &kp N8 &kp N9 &kp N0 &kp DEL
    &kp LSHFT &kp GRAVE &kp MINUS &kp EQUAL &kp LBKT &kp RBKT   &kp PIPE  &kp N4 &kp N5 &kp N6 &trans &kp RALT
-   &kp LCTRL &kp DQT   &kp UNDER &kp PLUS  &kp LBRC &kp TBRC   &kp TILDE &kp N1 &kp N2 &kp N3 &trans &trans
+   &kp LCTRL &kp DQT   &kp UNDER &kp PLUS  &kp LBRC &kp RBRC   &kp TILDE &kp N1 &kp N2 &kp N3 &trans &trans
                                         &trans &trans &trans   &kp SPACE &mt RGUI RET &mo 3
                         >;
                 };
