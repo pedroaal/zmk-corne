@@ -65,7 +65,7 @@
 // |     |     |     |     |     | PRNT |   | BDN | PREV | PLAY | NEXT |     |     |
 // |     |     |     |     |     |      |   |     |      |      |      |     |     |
 //                     | MED | GUI | SPC |   | SPC | ENT |     |
-                        display-name = "Raise";
+                        display-name = "Media";
                         bindings = <
    &bt BT_CLR &trans &trans &bt BT_SEL 1 &bt BT_PRV &bt BT_NXT        &kp C_BRI_UP &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans &kp C_PWR
    &trans     &trans &trans &bt BT_SEL 2 &trans     &kp LGUI(LS(5))   &kp C_BRI_DN &kp C_PREV &kp C_PP &kp C_NEXT &trans  &trans
