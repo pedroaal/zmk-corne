@@ -44,15 +44,15 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  %  |  ^  |  &  |  *  |     |   | PG_UP |     | UP  |     |     | F12 |
-// |     |  !  |  @  |  #  |  $  |     |   | PG_DN | LFT | DWN | RGT |     |     |
-// |     |     |     |     |     |     |   |       |     |     |     |     |     |
+// |     |  %  |  ^  |  &  |  *  |     |   | PG_UP |     |     |     |     | F12 |
+// |     |  !  |  @  |  #  |  $  |     |   | PG_DN | LFT | UP  | RGT |     |     |
+// |     |     |     |     |     |     |   |       |     | DWN |     |     |     |
 //                     | MED | GUI | SPC |   | SPC | ENT |     |
                         display-name = "Raise";
                         bindings = <
-   &trans &kp PRCNT &kp CARET &kp AMPS &kp STAR &trans   &kp PG_UP &trans   &kp UP   &trans    &trans  &kp F12
-   &trans &kp EXCL  &kp AT    &kp HASH &kp DLLR &trans   &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &trans  &trans
-   &trans &trans    &trans    &trans   &trans   &trans   &trans    &trans   &trans   &trans    &trans  &trans
+   &trans &kp PRCNT &kp CARET &kp AMPS &kp STAR &trans   &kp PG_UP &trans   &trans   &trans    &trans  &kp F12
+   &trans &kp EXCL  &kp AT    &kp HASH &kp DLLR &trans   &kp PG_DN &kp LEFT &kp UP   &kp RIGHT &trans  &trans
+   &trans &trans    &trans    &trans   &trans   &trans   &trans    &trans   &kp DOWN &trans    &trans  &trans
                            &mo 3 &kp LGUI &mt LALT SPACE   &trans &trans &trans
                         >;
                 };
