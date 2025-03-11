@@ -29,15 +29,15 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC  |  :  |  <  |  >  |  (  |  )  |   |  \  |  7  |  8  |  9  |  0  | DEL  |
+// |  ESC  |  "  |  <  |  >  |  (  |  )  |   |  \  |  7  |  8  |  9  |  0  | DEL  |
 // | LSHFT |  `  |  -  |  =  |  {  |  }  |   |  |  |  4  |  5  |  6  |     | RALT |
-// | LCTRL |  "  |  _  |  +  |  [  |  ]  |   |  ~  |  1  |  2  |  3  |     |      |
+// | LCTRL |  :  |  _  |  +  |  [  |  ]  |   |  ~  |  1  |  2  |  3  |     |      |
 //                   |     |  GUI  | SPC |   | SPC | ENT | MED |
                         display-name = "Lower";
                         bindings = <
-   &kp ESC   &kp COLON &kp LT    &kp GT    &kp LPAR &kp RPAR   &kp BSLH  &kp N7 &kp N8 &kp N9 &kp N0 &kp DEL
+   &kp ESC   &kp DQT   &kp LT    &kp GT    &kp LPAR &kp RPAR   &kp BSLH  &kp N7 &kp N8 &kp N9 &kp N0 &kp DEL
    &kp LSHFT &kp GRAVE &kp MINUS &kp EQUAL &kp LBRC &kp RBRC   &kp PIPE  &kp N4 &kp N5 &kp N6 &trans &kp RALT
-   &kp LCTRL &kp DQT   &kp UNDER &kp PLUS  &kp LBKT &kp RBKT   &kp TILDE &kp N1 &kp N2 &kp N3 &trans &trans
+   &kp LCTRL &kp COLON &kp UNDER &kp PLUS  &kp LBKT &kp RBKT   &kp TILDE &kp N1 &kp N2 &kp N3 &trans &trans
                                         &trans &trans &trans   &kp SPACE &mt RGUI RET &mo 3
                         >;
                 };
